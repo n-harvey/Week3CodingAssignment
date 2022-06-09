@@ -113,7 +113,3 @@ function guessingGame(userInput){
     }
     return (alert('You guessed the number'))
 }
-
-let computerChoice = Math.floor(Math.random() * 3)
-
-console.log(computerChoice)
