@@ -103,13 +103,14 @@ function willBuyDrink(isHotOutside, moneyInPocket){
 
 console.log(willBuyDrink(true, 11))
 
-console.log(guessingGame())
+guessingGame()
 
-function guessingGame(userInput){
+function guessingGame(){
+    let userInput = 0
     guess = Math.round(Math.random()*10,2)
     console.log(guess)
     while(userInput != guess){
     userInput = prompt('Guess my number 1-10')
     }
-    return (alert('You guessed the number'))
+    return (console.log('You guessed the number'))
 }
