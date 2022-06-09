@@ -88,3 +88,28 @@ function sumArray(array){
 }
 
 console.log(sumArray([1,2,3,4,5,6,7,8,9,10]))
+
+console.log(average([1,2,3,4,5,6,7,8,9,10]))
+
+function compareAvg(array1, array2){
+    return (average(array1) > average(array2))
+}
+
+console.log(compareAvg([1,2,3,4,5,6,7,8,9,10], [1,3,5,7,9,11,13,15,17,19]))
+
+function willBuyDrink(isHotOutside, moneyInPocket){
+    return(isHotOutside && moneyInPocket > 10.50)
+}
+
+console.log(willBuyDrink(true, 11))
+
+console.log(guessingGame())
+
+function guessingGame(userInput){
+    guess = Math.round(Math.random()*10,2)
+    console.log(guess)
+    while(userInput != guess){
+    userInput = prompt('Guess my number 1-10')
+    }
+    return (alert('You guessed the number'))
+}
