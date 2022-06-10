@@ -42,6 +42,12 @@ function concatNames(array){
 
 console.log(concatNames(names));
 
+
+//
+//The last element of an array is accesed with array[array.length-1]
+//The first element of an array is accesed with array[0]
+//
+
 function lengthOfNames(array){
     let nameLengths = []
     for (let i = 0; i < array.length; i++) {
